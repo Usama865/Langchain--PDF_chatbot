@@ -17,7 +17,7 @@ This code provides a Python script for creating a simple yet powerful PDF text s
    - The `FAISS` class from the `langchain.vectorstores` module is employed to create a vector database from the text chunks. This database enables efficient similarity search and retrieval based on vector representations.
 
 5. **Question-Answering Chain:**
-   - The system utilizes a language model for question-answering. Specifically, the `GooglePalm` class from `langchain.llms` is used, configured with a Google API key and parameters like temperature and maximum output tokens.
+   - The system utilizes a language model for question-answering. Specifically, the `GooglePalm` class from `langchain.llms` is used, configured with a [Google API](https://makersuite.google.com/app/apikey) key and parameters like temperature and maximum output tokens.
 
 6. **Memory for Conversations:**
    - The script implements a conversation buffer memory using the `ConversationBufferMemory` class from `langchain.memory`. This memory helps maintain context during interactions with the question-answering system.
@@ -33,7 +33,7 @@ This code provides a Python script for creating a simple yet powerful PDF text s
 ```python
 from dotenv import load_dotenv()
 ```
-or use your API key directly (click here for Google API documentation)
+or use your API key directly [(click here for Google API documentation)](https://ai.google.dev/docs)
 
 The script will process the PDF, create a searchable database, and allow users to interact with the question-answering system
  
